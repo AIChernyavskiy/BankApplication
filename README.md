@@ -23,4 +23,4 @@ class Document
 Для каждой сущности реализовать возможность CRUD операций.
 Document осуществляет списание и зачисление средств (проводка).
 Используемые технологии:
-Maven, Tomcat, Mockito, JUnit, Spring, Hibernate, HTML, CSS, JavaScript, JQuery, JSON, XML, Sonar.
+Maven, Tomcat, Mockito, JUnit, Spring, Hibernate, JMS, HTML, CSS, JavaScript, JQuery, JSON, XML, Sonar.
