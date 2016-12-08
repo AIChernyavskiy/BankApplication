@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <import resource="contextHibarnate.xml"/>
+
+    <bean id="indexController"  class="ru.sbertech.Controller.IndexController">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+
+    <bean id="clientController"  class="ru.sbertech.Controller.ClientController">
+        <property name="clientDao" ref="ClientDaoImpl" />
+    </bean>
+
+    <bean id="accountController"  class="ru.sbertech.Controller.AccountController">
+        <property name="clientDao" ref="ClientDaoImpl" />
+        <property name="accountDAO" ref="AccountDAOImpl" />
+    </bean>
+
+    <bean id="documentController"  class="ru.sbertech.Controller.DocumentController">
+        <property name="clientDao" ref="ClientDaoImpl" />
+        <property name="accountDAO" ref="AccountDAOImpl" />
+        <property name="documentDao" ref="DocumentDaoImpl" />
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+
+</beans>

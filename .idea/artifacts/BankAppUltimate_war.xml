@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="BankAppUltimate:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="BankApplication.war">
+      <element id="artifact" artifact-name="BankAppUltimate:war exploded" />
+    </root>
+  </artifact>
+</component>

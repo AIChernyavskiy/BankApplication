@@ -1,0 +1,141 @@
+ul {
+    list-style:none;
+}
+
+a {
+    color: darkslategray;
+    font-family: 'Segoe UI', Segoe, Tahoma, Geneva;
+    font-weight: bold;
+    text-decoration:none;
+}
+
+.menu, .menu1 {
+    display: flex;
+    margin: auto;
+}
+
+.opened > a {
+    font-size:30px;
+}
+
+.main-menu {
+    /*width:2100px;*/
+    margin:auto;
+    padding:0;
+}
+.main-menu >li {
+    position:relative;
+    display:inline-block;
+    background-color:#f5f5dc;
+    border-left: 1px solid #696969;
+    border-right: 1px solid #696969;
+    margin-left:-6px;
+    margin-top:25px;
+    padding:10px 25px;
+}
+.main-menu  a{
+    color:#696969;
+    color: darkslategray;
+    text-decoration:none;
+}
+
+.main-menu .opened .sub-menu-1 {
+    display:none;
+    position:absolute;
+    left:0px;
+    top:60px;
+    width:200px;
+    padding:5px 15px 5px 25px;
+    background-color:white;
+    z-index:10;
+    font-size:1.1em;
+}
+.main-menu .opened .sub-menu >li {
+
+    padding-top:15px;
+    border-bottom:1px dotted #696969;
+}
+.main-menu .opened:hover  .sub-menu{
+    display:block;
+}
+.main-menu .opened:hover>a {
+    color:#4169e1;
+}
+.main-menu .opened:hover {
+    background-color:white;
+}
+.sub-menu li:hover{
+    background-color:#f5fffa;
+}
+.sub-menu li:hover a {
+    color:#4169e1;
+
+}
+
+.main-menu .opened .sub-menu-2 {
+    display:none;
+    position:absolute;
+    left:0px;
+    top:60px;
+    width:280px;
+    padding:5px 15px 5px 25px;
+    background-color:white;
+    z-index:10;
+    font-size:1.1em;
+}
+.main-menu .opened .sub-menu-3 {
+    display:none;
+    position:absolute;
+    left:0px;
+    top:60px;
+    width:240px;
+    padding:5px 15px 5px 25px;
+    background-color:white;
+    z-index:10;
+    font-size:1.1em;
+}
+
+.ClientCRUD {
+    display:flex;
+}
+.ClientCRUD > div {
+    margin:auto;
+}
+.ClientFind {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin: auto;
+}
+p > strong {
+    margin-bottom: 50px;
+}
+
+table {
+    width: 50%;
+    margin: auto;
+    border: 4px double black; /* Рамка вокруг таблицы */
+    border-collapse: collapse; /* Отображать только одинарные линии */
+}
+th {
+    text-align: left; /* Выравнивание по левому краю */
+    background: #ccc; /* Цвет фона ячеек */
+    padding: 5px; /* Поля вокруг содержимого ячеек */
+    border: 1px solid black; /* Граница вокруг ячеек */
+}
+td {
+    padding: 5px; /* Поля вокруг содержимого ячеек */
+    border: 1px solid black; /* Граница вокруг ячеек */
+}
+p {
+    color: darkslategray;
+    font-family: 'Segoe UI', Segoe, Tahoma, Geneva;
+}
+input {
+    border:1px solid #008080;
+    border-radius: 8px;
+}
+input[type="submit"] {
+    background-color:#008080;
+    color:white;
+}
